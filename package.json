@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "@langchain/core": "^1.1.45",
+    "@langchain/openai": "^1.4.5",
+    "dotenv": "^17.4.2",
+    "zod": "^4.4.3"
+  },
+  "name": "retro-pulse",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "The AI Team Therapist",
+  "main": "index.js",
+  "devDependencies": {
+    "vitest": "^4.1.5"
+  },
+  "scripts": {
+    "start": "node index.mjs",
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svinod-030/retro-pulse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/svinod-030/retro-pulse/issues"
+  },
+  "homepage": "https://github.com/svinod-030/retro-pulse#readme"
+}
