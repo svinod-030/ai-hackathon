@@ -105,22 +105,15 @@ The goal of the hackathon MVP is to demonstrate:
 - **Processing**: PDF Parser, OCR
 
 ### System Architecture
-```text
-Frontend (Next.js)
-        |
-        v
-Backend API Layer
-        |
-        +-------------------+
-        |                   |
-        v                   v
-Resume Engine         Interview Engine
-        |                   |
-        v                   v
-Vector DB              LLM Evaluation
-        |
-        v
-PostgreSQL Database
+```mermaid
+flowchart TD
+    FE["Frontend (Next.js)"] --> BE["Backend API Layer"]
+    BE --> RE["Resume Engine"]
+    BE --> IE["Interview Engine"]
+    RE --> VDB[("Vector DB")]
+    IE --> LLM["LLM Evaluation"]
+    VDB --> DB[("PostgreSQL Database")]
+    LLM --> DB
 ```
 
 ### Database Design (Schema)
