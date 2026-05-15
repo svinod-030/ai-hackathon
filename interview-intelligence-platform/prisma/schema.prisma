@@ -1,0 +1,33 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model JobDescription {
+  id        String   @id @default(uuid())
+  content   String
+  skills    Json?
+  createdAt DateTime @default(now())
+}
+
+model Resume {
+  id            String   @id @default(uuid())
+  candidateName String?
+  content       String
+  skills        Json?
+  embeddingId   String?
+  createdAt     DateTime @default(now())
+}
+
+model MatchResult {
+  id        String   @id @default(uuid())
+  jdId      String
+  resumeId  String
+  score     Float
+  summary   String
+  createdAt DateTime @default(now())
+}

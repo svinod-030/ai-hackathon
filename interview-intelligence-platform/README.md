@@ -14,10 +14,10 @@ Build an AI-powered hiring intelligence platform that helps recruiters:
 
 ### MVP Goal
 The goal of the hackathon MVP is to demonstrate:
-- ✅ AI-based resume screening  
-- ✅ AI-driven interview evaluation  
-- ✅ Recruiter analytics dashboard  
-- ✅ Intelligent candidate scoring  
+- ✅ AI-based resume screening
+- ✅ AI-driven interview evaluation
+- ✅ Recruiter analytics dashboard
+- ✅ Intelligent candidate scoring
 - ✅ Enterprise-ready workflow
 
 ### Target Users

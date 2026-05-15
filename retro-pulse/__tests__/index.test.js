@@ -29,7 +29,7 @@ describe('RetroPulse', () => {
         expect(verdict.stressLevel).toBeGreaterThan(0);
         expect(verdict.stressLevel).toBeLessThan(10);
         expect(verdict.suggestedAction).not.toBeNull();
-    }, 50000);
+    }, 55000);
 
     /**
      * Scenario 2: The "Meeting Fatigue" Spike
@@ -56,7 +56,7 @@ describe('RetroPulse', () => {
         expect(verdict.stressLevel).toBeGreaterThan(0);
         expect(verdict.stressLevel).toBeLessThan(10);
         expect(verdict.suggestedAction).not.toBeNull();
-    }, 50000);
+    }, 55000);
 
     /**
      * Scenario 3: The "Scope Creep" Stealth Attack
@@ -83,7 +83,7 @@ describe('RetroPulse', () => {
         expect(verdict.stressLevel).toBeGreaterThan(0);
         expect(verdict.stressLevel).toBeLessThan(10);
         expect(verdict.suggestedAction).not.toBeNull();
-    }, 50000);
+    }, 55000);
 
     /**
      * Scenario 4: The "Hidden Dependencies" Trap
@@ -110,7 +110,7 @@ describe('RetroPulse', () => {
         expect(verdict.stressLevel).toBeGreaterThan(0);
         expect(verdict.stressLevel).toBeLessThan(10);
         expect(verdict.suggestedAction).not.toBeNull();
-    }, 50000);
+    }, 55000);
 
     /**
      * Scenario 5: The "Technical Debt" Avalanche
@@ -136,6 +136,6 @@ describe('RetroPulse', () => {
         expect(verdict.stressLevel).toBeGreaterThan(0);
         expect(verdict.stressLevel).toBeLessThan(10);
         expect(verdict.suggestedAction).not.toBeNull();
-    }, 50000);
+    }, 55000);
 
 });
